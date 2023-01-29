@@ -1,0 +1,10 @@
+#1
+f=open("name.txt", "r")
+contents = f.read()
+print(contents)
+f.close()
+
+#2
+with open("name.txt", "r") as my_file:
+    contents = my_file.read()
+    print(type(contents), contents)
